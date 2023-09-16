@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="js/tota11y.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/сss/style.production.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600&family=Lato:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <img src="img/Screenshot 2023-08-24 at 14.44.42.png" alt="alina_telychko" class="page-header__item" width="270">
+      <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+              <li role="presentation">
+                <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+              </li>
+              <li role="presentation">
+                <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+              </li>
+              <li role="presentation">
+                <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+              </li>
+              <li role="presentation">
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
+            </ul> 
+      </nav>
+  </header>
+<div class="contact_page">
+    <h1>Contact</h1>
+<div>
+    <h2>Alina Telychko</h2>
+    <p>Brachestr 29</p>
+    <p>12000 Berlin</p>
+    <p>Deutschland</p>
+    <br>
+  <a href="tel:+49 99 9999 9999">Tel: +49 99 9999 9999</a>
+    <br>
+<a  href="mailto:adelin9999@gmail.com">Email: adelin9999@gmail.com</a>
+</div>
+<br>
+<h3>To contact me:</h3>
+<form action="" method="post" id="contact-form">
+    <label class="standard-label" for="mail-lbl">Email: </label>
+    <input type="email" id="mail-lbl" required>
+  <br>
+  <br>
+    <label class="standard-label" for="tel-lbl">Telephone: </label>
+    <input type="tel" id="tel-lbl" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+  <br>
+  <br>
+    <label class="standard-label" for="msg-lbl">Message: </label>
+    <textarea required maxlength="240" id="msg-lbl"></textarea>
+    <br>
+    <br>
+    <input id="submit" type="submit" value="Send message">
+  </form>
+</div>
+</body>
+</html>
