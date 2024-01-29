@@ -12,19 +12,19 @@ font-family: 'Roboto', sans-serif;
 .color-primary-4 { color: #0F0F4E }
 */
 
-:root{
- --color_dark-navi: #494999;
---color_light-navi: #B5B5E4;
---color-navi: #7676BD;
---color-blue: #2C2C7B;
---color_dark-blue: #0F0F4E;
---color-navi-sky: #6680f4;
---background-color-milky: rgb(239, 239, 252);
---color-gray: rgba(0, 0, 0, 0.3);
---color-white: white;
---color-orange: #edc655;
---color-yellow: #fcffad;
---color-red: #f76414;
+:root {
+  --color_dark-navi: #494999;
+  --color_light-navi: #b5b5e4;
+  --color-navi: #7676bd;
+  --color-blue: #2c2c7b;
+  --color_dark-blue: #0f0f4e;
+  --color-navi-sky: #6680f4;
+  --background-color-milky: rgb(239, 239, 252);
+  --color-gray: rgba(0, 0, 0, 0.3);
+  --color-white: white;
+  --color-orange: #edc655;
+  --color-yellow: #fcffad;
+  --color-red: #f76414;
 }
 
 * {
@@ -124,6 +124,7 @@ form {
 section {
   margin: 20px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -146,25 +147,30 @@ section {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:first-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
-.button, button {
+.button,
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -194,23 +200,24 @@ button:focus,
   text-align: center;
 }
 
-table{
+table {
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 .about_list li {
-list-style-type: none;
+  list-style-type: none;
 }
 
 @keyframes color-change {
   0% {
     fill: var(--color-orange);
   }
+
   50% {
     fill: var(--color-yellow);
   }
+
   100% {
     fill: var(--color-red);
   }
@@ -224,16 +231,15 @@ list-style-type: none;
   animation-timing-function: linear;
 }
 
-
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
 }
-
 
 .cloud-front {
   animation: 15s cloud-move infinite alternate linear;
@@ -243,6 +249,7 @@ list-style-type: none;
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
